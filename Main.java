@@ -1,3 +1,4 @@
+//Elena Voinu
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -10,6 +11,7 @@ public class Main {
             //will create the database if it doesn't exist, otherwise it will connect to it
             Connection con = DriverManager.getConnection("jdbc:sqlite:test.db");
             Statement statement = con.createStatement();
+            
             // execute the following command
             statement.execute("CREATE TABLE contacts(name TEXT, phone INTEGER, email TEXT)");
 
