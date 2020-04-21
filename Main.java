@@ -12,7 +12,8 @@ public class Main {
             //will create the database if it doesn't exist, otherwise it will connect to it
        
             // execute the following command
-            statement.execute("CREATE TABLE contacts(name TEXT, phone INTEGER, email TEXT)")
+            statement.execute("CREATE TABLE IF NOT EXISTS" +
+                              " contacts(name TEXT, phone INTEGER, email TEXT)")
 
         }
         catch (SQLException e){
