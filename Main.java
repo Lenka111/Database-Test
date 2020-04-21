@@ -24,6 +24,10 @@ public class Main {
             statement.execute("INSERT INTO contacts(name, phone, email)" +
                                   " VALUES('Fido', 5557788, 'fido@email.com')");
             
+            //update an entry in the database
+            //before updating, comment out all the insert statements to avoid reinserting the same data into the db
+            statement.execute("UPDATE contacts SET phone=556677 WHERE name='Jane'");
+            
              //delete and entry in the database
             statement.execute("DELETE FROM contacts WHERE name='Joe'");
 
