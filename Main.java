@@ -23,6 +23,9 @@ public class Main {
                                   " VALUES('Jane', 22255566, 'Jane@email.com')");
             statement.execute("INSERT INTO contacts(name, phone, email)" +
                                   " VALUES('Fido', 5557788, 'fido@email.com')");
+            
+             //delete and entry in the database
+            statement.execute("DELETE FROM contacts WHERE name='Joe'");
 
         }
         catch (SQLException e){
