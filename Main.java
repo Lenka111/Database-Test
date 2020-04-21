@@ -14,6 +14,7 @@ public class Main {
             // execute the following command
             statement.execute("CREATE TABLE IF NOT EXISTS" +
                               " contacts(name TEXT, phone INTEGER, email TEXT)");
+            //add data to the database.
             statement.execute("INSERT INTO contacts(name, phone, email)" +
                                   " VALUES('Elena', 222333444, 'lena@email.com')");
             statement.execute("INSERT INTO contacts(name, phone, email)" +
