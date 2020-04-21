@@ -7,9 +7,11 @@ import java.sql.Statement;
 
 public class Main {
     public static void main(String[] args) {
+        //will create the database if it doesn't exist, otherwise it will connect to it
+        // error handling
         try( Connection con = DriverManager.getConnection("jdbc:sqlite:test.db");
              Statement statement = con.createStatement();) {
-            //will create the database if it doesn't exist, otherwise it will connect to it
+          
        
             // execute the following command
             statement.execute("CREATE TABLE IF NOT EXISTS" +
