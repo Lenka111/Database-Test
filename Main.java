@@ -13,7 +13,15 @@ public class Main {
        
             // execute the following command
             statement.execute("CREATE TABLE IF NOT EXISTS" +
-                              " contacts(name TEXT, phone INTEGER, email TEXT)")
+                              " contacts(name TEXT, phone INTEGER, email TEXT)");
+            statement.execute("INSERT INTO contacts(name, phone, email)" +
+                                  " VALUES('Elena', 222333444, 'lena@email.com')");
+            statement.execute("INSERT INTO contacts(name, phone, email)" +
+                                  " VALUES('Joe', 111333444, 'joe@email.com')");
+            statement.execute("INSERT INTO contacts(name, phone, email)" +
+                                  " VALUES('Jane', 22255566, 'Jane@email.com')");
+            statement.execute("INSERT INTO contacts(name, phone, email)" +
+                                  " VALUES('Fido', 5557788, 'fido@email.com')");
 
         }
         catch (SQLException e){
