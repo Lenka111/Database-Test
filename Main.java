@@ -36,6 +36,8 @@ public class Main {
             //query the data
              statement.execute("SELECT * FROM contacts");
              ResultSet resultSet = statement.getResultSet();
+            
+             //loop through each record and print out the data
 
         }
         catch (SQLException e){ 
