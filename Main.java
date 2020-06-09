@@ -32,6 +32,8 @@ public class Main {
             
              //delete and entry in the database
             statement.execute("DELETE FROM contacts WHERE name='Joe'");
+            
+            //query the data
 
         }
         catch (SQLException e){ 
