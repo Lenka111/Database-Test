@@ -38,6 +38,7 @@ public class Main {
              ResultSet resultSet = statement.getResultSet();
             
              //loop through each record and print out the data
+             while(resultSet.next()){
 
         }
         catch (SQLException e){ 
