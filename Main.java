@@ -41,9 +41,11 @@ public class Main {
              while(resultSet.next()){
                  System.out.println(resultSet.getString("name") + " "
                                     + resultSet.getInt("phone") + " "
+                                    + resultSet.getString("email"));
                                     
 
         }
+            
         catch (SQLException e){ 
             System.out.println("Something went wrong: " + e.getMessage());
         }
