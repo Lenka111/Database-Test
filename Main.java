@@ -39,6 +39,7 @@ public class Main {
             
              //loop through each record and print out the data
              while(resultSet.next()){
+                 System.out.println(resultSet.getString("name") + " "
 
         }
         catch (SQLException e){ 
