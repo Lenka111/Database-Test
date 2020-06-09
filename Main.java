@@ -34,7 +34,7 @@ public class Main {
             statement.execute("DELETE FROM contacts WHERE name='Joe'");
 
         }
-        catch (SQLException e){
+        catch (SQLException e){ 
             System.out.println("Something went wrong: " + e.getMessage());
         }
     }
