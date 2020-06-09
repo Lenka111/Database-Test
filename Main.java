@@ -34,6 +34,7 @@ public class Main {
             statement.execute("DELETE FROM contacts WHERE name='Joe'");
             
             //query the data
+             statement.execute("SELECT * FROM contacts");
 
         }
         catch (SQLException e){ 
